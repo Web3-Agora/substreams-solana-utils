@@ -1,0 +1,19 @@
+[package]
+name = "substreams-solana-utils"
+version = "0.1.5"
+edition = "2021"
+description = "本地化的Solana Substreams工具库，用于解析Solana链上交易数据"
+
+[lib]
+name = "substreams_solana_utils"
+
+[dependencies]
+substreams = "^0.5.0"
+prost = "0.11.9"
+prost-types = "0.11.9"
+regex = "1.10.2"
+substreams-solana = { git = "https://github.com/streamingfast/substreams-solana", branch = "master" }
+bs58 = "0.5.0"
+borsh = { version = "1.5.1", features = ["derive"] }
+base64 = "0.22.1"
+anyhow = "1.0.86"
